@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+  <!--<style>
+  body {
+    background-color: rgba(30,0,77) 
+  }
+    
+  
+    .task {
+      display: flex;
+      background-color: white;
+      padding: 4px;
+      border-bottom: solid black 1px;
+      transition: box-shadow 0.2s ;
+    }
+    .task:hover {
+      box-shadow: 0px 3px 15px rgba(97,97,97,0.843)
+    }
+    .tasks-table {
+      background: 
+      rgba(239,239,239);
+      width:60%;
+      /*height: 500px;*/
+      margin-top: 140px;
+    }
+    
+    button {
+      border: none;
+      font-size: 20px;
+      box-shadow: 0px 3px 5px rgba(168,168,168 ,0.33)
+    }
+    
+    button.circular {
+      outline: none;
+      border: none;
+      width:40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  </style>-->
+</head>
+
+<body>
+  <div style="direction: rtl;">
+      <!--// Center DIV //-->
+    <div style="display: flex; justify-content: center; align-items: center">
+      
+      <!-- Task TABLE -->
+      
+      <div class="tasks-table">
+        
+        <!-- HEADER -->
+        
+        <div style="width: 100%; text-align: center; background: rgba(92,52 ,155); color: white; padding-top: 8px; padding-bottom: 8px; border-radius: 20px 20px 0 0">
+          
+          <h1 style="display: inline;">مهامي</h1>
+          
+          <button id="add-btn" class="circular" style="float: right; background: white; margin-right: 10px;">+</button>
+        </div>
+        <!-- HEADER -->
+        
+        <!-- Tasks -->
+        
+        <div id="tasks" style="padding: 20px">
+          <!--<!-- Task -->
+          <div class="task">
+            <!--Task info-->
+            <div class="task-title" style="width: 70%; ">
+              <h3>قرآة كتاب</h3>
+              <div>
+                <span>
+                  14/9/2024
+                </span>
+              </div>
+            </div>
+            <!--Task info-->
+            
+            <!--Task Actions-->
+            <div class="buttons" style="display: flex; justify-content: space-between; align-items: center ;  width:30%;">
+              <button class="circular" style="background: rgba(114,0,0); color: white;">🗑️</button>
+              <button class="circular" style="background: rgba(0,150,30); color: white;">C</button>
+                  <button class="circular" style="background: rgba(0,16,197,0.692); color: white;">E</button>
+            </div>
+            <!--Task Actions-->
+          </div>
+          <!-- Task -->
+        </div>
+        
+        
+        <!-- End Tasks -->
+      </div>
+      
+      <!-- End Task TABLE -->
+      
+    </div>
+    
+    <!--// END Center DIV //-->
+    
+  </div>
+</body>
+
+
+
+<!--<script>
+
+    
+  let tasks = [
+    {
+      "title" : "Read a book",
+      "date" : "15/15/2024",
+      "isDone" : false
+    },
+    
+    {
+      "title" :"finish The End project",
+      "date" : "15/15/2024",
+      "isDone" : false
+    },
+    
+    {
+      "title" : "End JavaScript course",
+      "date" : "15/15/2024",
+      "isDone" : false
+    },
+    {
+      "title" : "Finish Python Course",
+      "date" : "15/15/2024",
+      "isDone" : false
+    },
+  ]
+  document.getElementById("tasks").innerHTML =""
+  for (task of tasks) {
+    let content = `
+  <!--<!-- Task --
+          <div class="task">
+            <!--Task info--
+            <div style="width: 70%; ">
+              <h3>${task.title}</h3>
+              <div>
+                <span>
+                  ${task.date}
+                </span>
+              </div>
+            </div>
+            <!--Task info-->
+            
+            <!--Task Actions--
+            <div style="display: flex; justify-content: space-between; align-items: center ;  width:30%;">
+              <button class="circular" style="background: rgba(114,0,0); color: white;">🗑️</button>
+              <button class="circular" style="background: rgba(0,150,30); color: white;">C</button>
+              <button class="circular" style="background: rgba(0,16,197,0.692); color: white;">E</button>
+            </div>
+            <!--Task Actions--
+          </div>
+          <!-- Task --
+          `
+          document.getElementById("tasks").innerHTML += content
+          
+  }
+  
+</script>-->
+<script src="script.js"></script>
+
+</html>

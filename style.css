@@ -1,0 +1,57 @@
+body {
+    background-color: rgba(30,0,77);
+    
+  }
+    
+  
+    .task {
+      display: flex;
+      background-color: white;
+      padding: 4px;
+      border-bottom: solid black 1px;
+      transition: box-shadow 0.2s ;
+      border-radius: 20px;
+    }
+    .done {
+      background-color:   rgb(158, 253, 160);
+    }
+    .task:hover {
+      box-shadow: 0px 3px 15px rgba(97,97,97,0.843)
+    }
+    .tasks-table {
+      background: rgba(239,239,239);
+      width:60%;
+      /*height: 500px;*/
+      margin-top: 140px;
+      border-radius: 20px;
+    }
+    
+    button {
+      border: none;
+      font-size: 20px;
+      box-shadow: 0px 3px 5px rgba(168,168,168 ,0.33)
+    }
+    
+    button.circular {
+      outline: none;
+      border: none;
+      width:40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  @media (max-width: 1023px) {
+    .tasks-table {
+      width: 100%;
+    }
+    .task .task-title {
+      width: 60%;
+    }
+    .buttons {
+      width: 40%;
+    }
+    
+    /*.task {
+      width: 300px;
+      height: 100%;
+    }*/
+  }
